@@ -15,5 +15,8 @@ A minimalist browser extension to clean up your social feeds by filtering unwant
 3. Enjoy a cleaner, distraction-free feed.
 
 ---
+## Preview
+<video src="https://github.com/user-attachments/assets/62911b66-c222-436e-bf96-c7c57fd8003f" width="100%"></video>
+
 
 ✨ vibe coded by [@priyankarpal](https://github.com/priyankarpal)

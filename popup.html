@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Filter Extension</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="popup-container">
+        <div class="popup-header">
+            <h1 class="popup-title">Content Filter</h1>
+            <p class="popup-subtitle">Clean your social feeds</p>
+            <div class="credit-bar">
+                ✨ vibe coded by <a href="https://github.com/priyankarpal" target="_blank"
+                    rel="noopener noreferrer">@priyankarpal</a>
+            </div>
+        </div>
+
+        <div class="popup-content">
+            <div class="section-list">
+                <div>
+                    <label class="toggle-label">
+                        <span class="toggle-text">Enable Filtering</span>
+                        <input type="checkbox" id="enabled" class="toggle-checkbox">
+                    </label>
+                </div>
+
+                <div class="section-card">
+                    <h2 class="section-title">Platform Filters</h2>
+                    <div class="section-options">
+                        <label class="option-label">
+                            <span class="option-text">X (Twitter)</span>
+                            <input type="checkbox" id="filterX" class="option-checkbox">
+                        </label>
+                        <label class="option-label">
+                            <span class="option-text">LinkedIn</span>
+                            <input type="checkbox" id="filterLinkedIn" class="option-checkbox">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="section-card">
+                    <h2 class="section-title">Content Types</h2>
+                    <div class="content-types-grid">
+                        <label class="option-label">
+                            <input type="checkbox" id="filterPromo" class="option-checkbox">
+                            <span class="option-text">Promotional</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="checkbox" id="filterBait" class="option-checkbox">
+                            <span class="option-text">Clickbait</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="checkbox" id="filterAdult" class="option-checkbox">
+                            <span class="option-text">Adult</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="checkbox" id="filterScam" class="option-checkbox">
+                            <span class="option-text">Scam</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="checkbox" id="filterCrypto" class="option-checkbox">
+                            <span class="option-text">Crypto</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="checkbox" id="filterSpam" class="option-checkbox">
+                            <span class="option-text">Spam</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="section-card">
+                    <h2 class="section-title">Custom Keywords</h2>
+                    <div class="keyword-input-row">
+                        <input type="text" id="keywordInput" placeholder="Add keyword..." class="keyword-input">
+                        <button id="addKeyword" class="keyword-add-btn">Add</button>
+                    </div>
+                    <div id="keywordList" class="keyword-list"></div>
+                </div>
+
+                <div class="section-card">
+                    <div class="stats-row">
+                        <div>
+                            <p class="stats-label">Hidden Posts</p>
+                            <p class="stats-count" id="hiddenCount">0</p>
+                        </div>
+                        <button id="resetStats" class="reset-btn">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
